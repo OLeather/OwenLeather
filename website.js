@@ -84,10 +84,13 @@ function showSlides(n) {
     }
 
 
-
-    slides[slideIndex-1].style.display = "block";
+    if(slides[slideIndex-1] != null){
+        slides[slideIndex-1].style.display = "block";
+    }
 
 }
+
+
 
 function plusSlidesNav(n) {
     showSlidesNav(slideIndex += n);
